@@ -1,7 +1,11 @@
-<h1 align="center">Hi, I'm Finn 👋</h1>
+<h1 align="center">Hi, I'm Finn 👋</h1> 
 <h3 align="center">🚀 Web3 DevOps Engineer | Python Automation | Blockchain Infrastructure</h3>
 
----
+<div align="center" style="margin: 1em 0;">
+  <button onclick="toggleLang()" style="padding: 8px 16px; font-size: 16px;">🌐 Switch to 中文</button>
+</div>
+
+<div id="lang-en">
 
 ## 🇬🇧 About Me (English)
 
@@ -15,7 +19,9 @@ I’m **Finn**, a Web3 infrastructure specialist helping blockchain teams deploy
 - Automate node health checks and infra tasks with Python
 - Operate securely on AWS / Alibaba Cloud
 
----
+</div>
+
+<div id="lang-zh" style="display: none;">
 
 ## 🇨🇳 关于我（中文）
 
@@ -29,6 +35,8 @@ I’m **Finn**, a Web3 infrastructure specialist helping blockchain teams deploy
 - 使用 Python 编写自动化脚本和节点运维工具
 - 熟练运维 AWS / 阿里云等主流云平台
 
+</div>
+
 ---
 
 ## 🧰 Tech Stack
@@ -41,6 +49,14 @@ I’m **Finn**, a Web3 infrastructure specialist helping blockchain teams deploy
 
 ---
 
+## 🧪 Projects
+
+| Project               | Description / 描述                          |
+|-----------------------|---------------------------------------------|
+| 🟢 `eth-node-deployer` | Deploy ETH nodes in one click / 一键部署 ETH 节点 |
+| 📊 `chain-node-monitor` | Dashboards for ETH/BTC/Cosmos 节点监控     |
+| ⚙️ `web3-node-api`     | Node health API using FastAPI               |
+| 🧪 `py-chain-utils`    | Python 脚本集合，支持节点维护与数据分析     |
 
 ---
 
@@ -51,9 +67,28 @@ I’m **Finn**, a Web3 infrastructure specialist helping blockchain teams deploy
 - Web3 团队基础设施自动化支持
 - 长期远程合作 / 顾问合作
 
-📨 Email / 邮箱: **finn4web3@gmail.com**  
+📨 Email / 邮箱: **finn4web3@protonmail.com**  
 💬 Telegram: [@finn4web3](https://t.me/finn4web3)  
 🌐 GitHub: [github.com/finn4web3](https://github.com/finn4web3)
 
 ---
 
+_"Automating Web3 from the ground up."_  
+_"自动化构建下一代区块链基础设施。"_  
+
+<script>
+function toggleLang() {
+  const en = document.getElementById('lang-en');
+  const zh = document.getElementById('lang-zh');
+  const button = event.target;
+  if (en.style.display === 'none') {
+    en.style.display = 'block';
+    zh.style.display = 'none';
+    button.innerText = '🌐 Switch to 中文';
+  } else {
+    en.style.display = 'none';
+    zh.style.display = 'block';
+    button.innerText = '🌐 Switch to English';
+  }
+}
+</script>
