@@ -3,7 +3,7 @@
 
 ---
 
-## 🇬🇧 About Me
+## About Me
 
 I’m **Finn**, a Web3 infrastructure specialist helping blockchain teams deploy, monitor, and scale reliably with **Kubernetes**, **CI/CD**, and **Python** automation.
 
